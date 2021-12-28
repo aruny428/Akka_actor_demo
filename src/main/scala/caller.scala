@@ -20,6 +20,7 @@ class caller(string: String) extends Actor{
       }
       println(s"received $i , with $string")
     case msg =>
+      sender() ! "invalid massage !!"
       println(s"received $msg , Not valid !")
   }
 }
