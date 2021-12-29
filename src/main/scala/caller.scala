@@ -14,7 +14,7 @@ class caller(string: String) extends Actor{
         case 5 => println("Its Friday")
         case 6 => println("Its Saturday")
         case 7 =>
-          receiver2Actor ! "Holiday"
+          receiver2Actor ! 6
           println("Its Sunday")
         case _ => println("Not a valid weekday ")
       }
